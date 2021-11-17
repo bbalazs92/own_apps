@@ -1,8 +1,3 @@
-#create folder
-#create file
-#open file
-#fill file with content
-#close file
 Dir.mkdir('output') unless Dir.exist?('output')
 
 def insert_random_detail(filename)
@@ -29,7 +24,7 @@ def generate_entries
     entries = ""
     #adjust the number of entries by increasing loops
     while i < 5 do
-        new_entry = "INSERT INTO users (id, first_name, last_name, email, points_overall, validated) VALUES (#{i}, #{insert_random_detail("files/first_names.txt")}, #{insert_random_detail("files/last_names.txt")}, #{insert_random_detail("email")});"
+        new_entry = "INSERT INTO users (id, first_name, last_name, email, points_overall, validated) VALUES (#{i}, #{save_first_name = insert_random_detail("files/first_names.txt")}, #{save_last_name = insert_random_detail("files/last_names.txt")}, #{save_first_name + "." + save_last_name + "@fakemail.com"}, #{rand(300)}, #{true});"
         entries << new_entry
         entries << "\r\n"
     i += 1
