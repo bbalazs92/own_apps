@@ -1,1 +1,4 @@
-smoke test
+INSERT INTO users (id, first_name, last_name, email, points_overall, validated) VALUES (1, Alberta, Clapton, Abena.Boocock@fakemail.com);
+INSERT INTO users (id, first_name, last_name, email, points_overall, validated) VALUES (2, Brya, Healy, Tymel.Dalzell@fakemail.com);
+INSERT INTO users (id, first_name, last_name, email, points_overall, validated) VALUES (3, Bradi, Pott, Bibi.Greer@fakemail.com);
+INSERT INTO users (id, first_name, last_name, email, points_overall, validated) VALUES (4, Gloria, Joy, Rheana.Frazer@fakemail.com);
