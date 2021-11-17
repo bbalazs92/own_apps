@@ -23,6 +23,7 @@ def generate_entries
     i = 1
     entries = ""
     #adjust the number of entries by increasing loops
+    #note to self: try yield
     while i < 101 do
         new_entry = "INSERT INTO users (id, first_name, last_name, email, points_overall, validated) VALUES (#{i}, \"#{save_first_name = insert_random_detail("files/first_names.txt")}\", \"#{save_last_name = insert_random_detail("files/last_names.txt")}\", \"#{save_first_name + "." + save_last_name + "@fakemail.com"}\", #{rand(300)}, #{true});"
         entries << new_entry
